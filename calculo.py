@@ -1,3 +1,5 @@
+#faça as alterações no branch dev
+
 def opcoes():
     opcao = int(input('\nQual operação deseja fazer?\n1 - soma\n2 - subtração\n3 - divisão\n4 - multiplicação\n5 - Sair\n'))
     if (opcao < 1 or opcao > 5):
