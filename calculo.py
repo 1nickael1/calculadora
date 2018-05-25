@@ -35,8 +35,6 @@ def input_int(msg):
             return int(input(msg))
         except ValueError:
             print('Número invalido.')
-        except ZeroDivisionError:
-            print('nao divisivel por 0')
 
 
 def soma():
