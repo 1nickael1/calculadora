@@ -33,10 +33,19 @@ def input_int(msg):
     while True:
         try:
             return int(input(msg))
+        except ZeroDivisionError:
+            print('nao poe')
         except ValueError:
             print('Número invalido.')
 
-
+'''
+def teste():
+    n2 = input_int('\nDigite o segundo número: ')
+    if n2 > 0:
+        print('\nA Divisão de {} e {} é {}\n'.format(n1, n2, (n1 / n2)))
+    else:
+        teste()
+'''
 def soma():
     n1 = input_int('\nDigite o primeiro número: ')
     n2 = input_int('\nDigite o  segundo número: ')
@@ -52,7 +61,7 @@ def subt():
 def divi():
     n1 = input_int('\nDigie o primeiro número: ')
     n2 = input_int('\nDigite o segundo número: ')
-    print('\nA Divisão de {} e {} é {}\n'.format(n1, n2, (n1 / n2)))
+    print('\nA Divisão de {} e {} é {}\n'.format(n1, n2, (n1/n2)))
 
 
 def multi():
