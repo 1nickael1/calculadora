@@ -1,5 +1,6 @@
 from calculo import opcoes
 from tabuada import conta
+from porcentagem import desconto
 
 print('Bem vindo!\n')
 
@@ -7,14 +8,21 @@ print('Bem vindo!\n')
 def principal():
     z = 0
     while z == 0:
-        y = int(input('Deseja usar a Calculadora, ou a tabuada?\n1 - Calculadora\n2 - Tabuada\n3 - Sair\n'))
-        if y < 1 or y > 3:
+        y = int(input('Escolha a ferramente que deseja usar!\n'
+                      '1 - Calculadora\n'
+                      '2 - Tabuada\n'
+                      '3 - Porcentagem\n'
+                      '4 - Sair\n'))
+        if y < 1 or y > 4:
             z = 0
         elif y == 1:
             opcoes()
             z = z + 1
         elif y == 2:
             conta()
+            z = z + 1
+        elif y == 3:
+            desconto()
             z = z + 1
         else:
             print('Fechando programa!')

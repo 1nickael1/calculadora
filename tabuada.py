@@ -5,7 +5,7 @@ def input_int(msg):
         except ZeroDivisionError:
             print('nao poe')
         except ValueError:
-            print('Número invalido.')
+            print('Número invalido.\n')
 
 def conta():
       x = input_int('Digite um numero para ver sua tabuada: ')
